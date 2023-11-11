@@ -1,0 +1,53 @@
+h1
+{
+    text-align: center;
+}
+
+section{
+    float: left;
+}
+
+#Formulario
+{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 30%;
+    border: 1px solid black;
+    padding: 24px;
+}
+
+#Asistencias
+{
+    margin-left: 50px;
+    margin-top: 0px;
+    width: 110%;
+    border: 1px solid black;
+}
+
+tr{
+    background-color: rgb(139, 132, 132);
+}
+
+tr, th
+{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+input
+{
+    float: right;
+    width: auto;
+}
+
+button
+{
+    border-style: none;
+    margin-left: 35%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgba(18, 194, 18, 0.63);
+}
