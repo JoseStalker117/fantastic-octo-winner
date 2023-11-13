@@ -1,53 +1,86 @@
-h1
+*
 {
-    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-section{
+body
+{
+    display: flex; align-content: center; justify-content: center;
+    background-image: url("https://th.bing.com/th/id/OIG.oRCs0U27KMuGNTpn616m?pid=ImgGn");
+    background-repeat: no-repeat;
+    background-size: cover;font-size: 20px;
+}
+
+section
+{
     float: left;
 }
 
 #Formulario
 {
     margin-top: 20px;
-    margin-left: 50px;
-    width: 30%;
     border: 1px solid black;
     padding: 24px;
+    background-color: rgba(255, 255, 255, 0.600);
+    
 }
 
-#Asistencias
+h1
 {
-    margin-left: 50px;
-    margin-top: 0px;
-    width: 110%;
-    border: 1px solid black;
-}
-
-tr{
-    background-color: rgb(139, 132, 132);
-}
-
-tr, th
-{
-    border: 1px solid black;
-    padding: 5px;
+    text-align: center;
 }
 
 input
 {
+    padding: 5px;
     float: right;
     width: auto;
 }
 
-button
+input:focus
 {
-    border-style: none;
-    margin-left: 35%;
-    padding: 15px;
-    border-radius: 10px;
+    caret-color: blue;
 }
 
-button:hover{
-    background-color: rgba(18, 194, 18, 0.63);
+button
+{
+    font-size: 15px;
+    margin: 0px 30%;
+    border-style: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+button:hover
+{
+    background-color: rgba(0, 0, 0, 0.600);   
+    color: white;
+    transition: all ease 300ms;
+}
+
+table
+{
+    margin-top: 13px;
+    width: 100%;
+    padding: 5px;
+}
+
+tr, th
+{
+    border: 0px solid black;
+    padding: 5px;
+
+}
+
+th
+{
+    background-color: rgba(255, 255, 255, 0.505);
+    color: black;
+}
+
+#Encabezado
+{
+    background-color: rgba(0, 0, 0, 0.512);
+    color: white;
+
 }

@@ -34,24 +34,29 @@ function Verificar()
     var ApellidoP = document.forms["MiFormulario"]["ApellidoP"].value;
     var ApellidoM = document.forms["MiFormulario"]["ApellidoM"].value;
 
+    Matricula = Matricula.trim();
+    Nombres = Nombres.trim();
+    ApellidoP = ApellidoP.trim();
+    ApellidoP = ApellidoM.trim();
+
         if(Matricula == "" || Matricula == null)
         {
-            window.alert("Por favor llene todos los campos");
+            window.alert("Por favor llene todos los campos con información válida");
             document.getElementById("Matricula").focus();
         }
         else if (Nombres == "" || Nombres == null)
         {
-            window.alert("Por favor llene todos los campos");
+            window.alert("Por favor llene todos los campos con información válida");
             document.getElementById("Nombres").focus();
         }
         else if (ApellidoP == "" || ApellidoP == null)
         {
-            window.alert("Por favor llene todos los campos");
+            window.alert("Por favor llene todos los campos con información válida");
             document.getElementById("ApellidoP").focus();
         }
         else if (ApellidoM == "" || ApellidoM == null)
         {
-            window.alert("Por favor llene todos los campos");
+            window.alert("Por favor llene todos los campos con información válida");
             document.getElementById("ApellidoM").focus();
         }
         else
