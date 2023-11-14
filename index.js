@@ -43,22 +43,27 @@ function Verificar()
         {
             window.alert("Por favor llene todos los campos con información válida");
             document.getElementById("Matricula").focus();
+            document.getElementById("Matricula").value = "";
         }
         else if (Nombres == "" || Nombres == null)
         {
             window.alert("Por favor llene todos los campos con información válida");
             document.getElementById("Nombres").focus();
+            document.getElementById("Nombres").value = "";
         }
         else if (ApellidoP == "" || ApellidoP == null)
         {
             window.alert("Por favor llene todos los campos con información válida");
             document.getElementById("ApellidoP").focus();
+            document.getElementById("ApellidoP").value = "";
         }
         else if (ApellidoM == "" || ApellidoM == null)
         {
             window.alert("Por favor llene todos los campos con información válida");
             document.getElementById("ApellidoM").focus();
+            document.getElementById("ApellidoM").value = "";
         }
+        
         else
         {
             window.alert("Registro exitoso");
@@ -76,7 +81,12 @@ function AddToTable(Matricula, Nombres, ApellidoP, ApellidoM)
 {
     const currentDate = new Date().toDateString();
 
-var TablaAsistencias = document.getElementById("Asistencias");
+    Matricula = Matricula.trim();
+    Nombres = Nombres.trim();
+    ApellidoP = ApellidoP.trim();
+    ApellidoP = ApellidoM.trim();
+
+    var TablaAsistencias = document.getElementById("Asistencias");
 
     TablaAsistencias.innerHTML += "<tr> <th>" + currentDate + "</th>" +
     "<th>" + Matricula.toUpperCase() + "</th>" +
