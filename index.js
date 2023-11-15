@@ -37,7 +37,7 @@ function Verificar()
     Matricula = Matricula.trim();
     Nombres = Nombres.trim();
     ApellidoP = ApellidoP.trim();
-    ApellidoP = ApellidoM.trim();
+    ApellidoM = ApellidoM.trim();
 
         if(Matricula == "" || Matricula == null)
         {
@@ -84,7 +84,7 @@ function AddToTable(Matricula, Nombres, ApellidoP, ApellidoM)
     Matricula = Matricula.trim();
     Nombres = Nombres.trim();
     ApellidoP = ApellidoP.trim();
-    ApellidoP = ApellidoM.trim();
+    ApellidoM = ApellidoM.trim();
 
     var TablaAsistencias = document.getElementById("Asistencias");
 
